@@ -1,0 +1,24 @@
+{
+  "name": "crud-using-express.js-and-jwt",
+  "version": "1.0.0",
+  "description": "this is basic crud operation using express.js and jwt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bereket21-12/crud-using-express.js-and-jwt.git"
+  },
+  "author": "bereket tadele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bereket21-12/crud-using-express.js-and-jwt/issues"
+  },
+  "homepage": "https://github.com/bereket21-12/crud-using-express.js-and-jwt#readme",
+  "dependencies": {
+    "cores": "^0.8.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.6.2"
+  }
+}
