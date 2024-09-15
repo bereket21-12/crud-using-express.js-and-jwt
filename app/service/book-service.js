@@ -16,7 +16,10 @@ try {
     return newBook;
 
 } catch (error) {
-    console.log("Unable to create new book",error)
+    console.log("Unable to create new book", error)
+          res.status(500).send({
+            message: error.message || "Error when add a book!",
+          });
     throw error;
 
 }
