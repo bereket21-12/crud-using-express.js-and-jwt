@@ -68,8 +68,8 @@ exports.signin = (req, res) => {
       }
 
       // Create a token
-      const token = jwt.sign({ id: user.id }, config.secret, {
-        expiresIn: 600, // Token expires in 10 minutes (600 seconds)
+      const token = jwt.sign({ id: user.id,email:user.email }, config.secret, {
+        expiresIn: 6000, 
       });
 
       // Send user data with token

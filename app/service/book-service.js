@@ -12,8 +12,13 @@ validateRequest(req)
     }
 
 try {
-    newBook = await Book.create(book)
-    return newBook;
+ const newBook = new Book(book)
+  await newBook.save()
+    
+   res.status(201).send({
+    message: "book created",
+    book:newBook
+  })
 
 } catch (error) {
     console.log("Unable to create new book", error)

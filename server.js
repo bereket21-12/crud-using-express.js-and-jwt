@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 require("./app/routes/user-route")(app)
-
+require("./app/routes/book-route")(app)
 app.listen(3000, () => {
     console.log("The app is listing on port number 8000")
 })

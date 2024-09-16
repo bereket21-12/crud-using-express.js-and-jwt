@@ -7,4 +7,4 @@ const bookSchema = new mongoose.Schema({
   date: { type: String, required: true },
 });
 
-const Book = mongoose.model("Book", bookSchema);
+module.exports = mongoose.model("Book", bookSchema);
